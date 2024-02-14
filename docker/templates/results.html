@@ -1,0 +1,19 @@
+<html>
+  <body bgcolor=#f0f0f0>
+    <center>
+      <h1>Results</h1>
+      {% if data == 0 %}
+      <h1>You did not survive.</h1>
+      <img src="./static/not-ok.jpg">
+      {% elif data == 1 %}
+      <h1>You survived!</h1>
+      <img src="./static/ok.jpg">
+      {% else %}
+      <h1>Wrong input, try again...</h1>
+      <img src="./static/attention.jpg">
+      {% endif %}
+      <br><br>
+      <a href="/">Back to home page</a>
+    </center>
+  </body>
+</html>
